@@ -308,13 +308,13 @@ well-known :program:`clang-tidy` integrations in detail.
 .. _integrates clang-tidy: https://www.jetbrains.com/help/clion/clang-tidy-checks-support.html
 
 CLion_ 2017.2 and later `integrates clang-tidy`_ as an extension to the
-built-in code analyzer. Starting 2018.2 EAP, it can be used via Clangd.
-Inspections and applicable quick-fixes are performed on the fly, and checks
-can be configured in the standard command line format. In this integration,
-you can switch to the :program:`clang-tidy` binary different from the bundled
-one and pass configuration via ``.clang-tidy`` files instead of using the IDE
-settings. Starting from version 2018.1, CLion allows configuring options for
-particular checks.
+built-in code analyzer. Starting from 2018.2 EAP, CLion allows using
+:program:`clang-tidy` via Clangd. Inspections and applicable quick-fixes are
+performed on the fly, and checks can be configured in standard command line
+format. In this integration, you can switch to the :program:`clang-tidy`
+binary different from the bundled one, pass the configuration in
+``.clang-tidy`` files instead of using the IDE settings, and configure
+options for particular checks.
 
 .. _KDevelop: https://www.kdevelop.org/
 .. _kdev-clang-tidy: https://github.com/KDE/kdev-clang-tidy/
@@ -374,7 +374,7 @@ a lint engine that applies :program:`clang-tidy` along with other linters.
 and CPPCheck_ 1.82. CPPCheck integration lets you import Visual Studio
 solutions and run the :program:`clang-tidy` inspection on them. The
 CodeChecker_ application of version 5.3 or later, which also comes as a plugin_
-for Eclipse,supports :program:`clang-tidy` as a static analysis instrument and
+for Eclipse, supports :program:`clang-tidy` as a static analysis instrument and
 allows to use a custom :program:`clang-tidy` binary.
 
 Suppressing Undesired Diagnostics
