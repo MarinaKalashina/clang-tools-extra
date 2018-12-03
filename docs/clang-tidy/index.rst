@@ -263,8 +263,7 @@ Clang-tidy integrated
 ---------------------
 Apart from being a standalone tool, :program:`clang-tidy` is integrated into
 various IDEs, code analyzers, and editors. The following table shows the most
- well-known :program:`clang-tidy` integrations
-in detail.
+ well-known :program:`clang-tidy` integrations in detail.
 
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
 |                                      |        Feature                                                                                                                                           |
@@ -305,10 +304,10 @@ in detail.
 CLion_ 2017.2 and later `integrates clang-tidy`_ as an extension to the
 built-in code analyzer. Inspections and applicable quick-fixes are performed
 on the fly, and checks can be configured in the standard command line
-format. In this integration, you can switch to the :program:`clang-tidy` binary
- different from the bundled one and pass configuration via ``.clang-tidy``
- files instead of using the IDE settings. Starting from version 2018.1, CLion
-  allows configuring options for particular checks.
+format. In this integration, you can switch to the :program:`clang-tidy`
+binary different from the bundled one and pass configuration via ``
+.clang-tidy`` files instead of using the IDE settings. Starting from version
+2018.1, CLion allows configuring options for particular checks.
 
 .. _KDevelop: https://www.kdevelop.org/
 .. _kdev-clang-tidy: https://github.com/KDE/kdev-clang-tidy/
@@ -324,7 +323,7 @@ output to provide a list of issues.
 QtCreator_ 4.6 integrates :program:`clang-tidy` warnings into the editor
 diagnostics under the `Clang Code Model`_. To employ :program:`clang-tidy`
 inspection in QtCreator, you need to create a copy of one of the presets and
- choose the checks to be performed in the Clang Code Model Warnings menu.
+choose the checks to be performed in the Clang Code Model Warnings menu.
 
 .. _MS Visual Studio: https://visualstudio.microsoft.com/
 .. _ReSharper C++: https://www.jetbrains.com/help/resharper/Clang_Tidy_Integration.html
@@ -332,17 +331,17 @@ inspection in QtCreator, you need to create a copy of one of the presets and
 .. _Clang Power Tools: https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools
 .. _clang-tidy-vs: https://github.com/llvm-mirror/clang-tools-extra/tree/master/clang-tidy-vs
 
-`MS Visual Studio`_ has a native clang-tidy-vs_ plugin,
-and also can integrate :program:`clang-tidy` by means of three other tools.
-The `ReSharper C++`_ extension, version 2017.3 and later, provides seamless
-:program:`clang-tidy` integration: checks and quick-fixes run alongside
-native inspections. Apart from that, ReSharper C++ incorporates
-:program:`clang-tidy` as a separate step of its code clean-up process.
-`Visual Assist`_ build 2210 includes a subset of :program:`clang-tidy` checklist
- to inspect the code as you edit. Another way to bring :program:`clang-tidy`
- functionality to Visual Studio is the `Clang Power Tools`_ plugin, which
- includes most of the :program:`clang-tidy` checks and runs them during
- compilation or as a separate step of code analysis.
+`MS Visual Studio`_ has a native clang-tidy-vs_ plugin and also can integrate
+:program:`clang-tidy` by means of three other tools. The `ReSharper C++`_
+extension, version 2017.3 and later, provides seamless :program:`clang-tidy`
+integration: checks and quick-fixes run alongside native inspections. Apart
+from that, ReSharper C++ incorporates :program:`clang-tidy` as a separate
+step of its code clean-up process. `Visual Assist`_ build 2210 includes a
+subset of :program:`clang-tidy` checklist to inspect the code as you edit.
+Another way to bring :program:`clang-tidy` functionality to Visual Studio is
+the `Clang Power Tools`_ plugin, which includes most of the
+:program:`clang-tidy` checks and runs them during compilation or as a separate
+step of code analysis.
 
 **Editors**
 
