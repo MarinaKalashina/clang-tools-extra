@@ -403,7 +403,7 @@ if changing the semantics of the code is not desired, the ``NOLINT`` or
 
     // Silent only the specified diagnostics for the next line
     // NOLINTNEXTLINE(google-explicit-constructor, google-runtime-int)
-    Foo(bool param);
+    Foo(bool param); 
   };
 
 The formal syntax of ``NOLINT``/``NOLINTNEXTLINE`` is the following:
