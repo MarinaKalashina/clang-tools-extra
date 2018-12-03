@@ -261,9 +261,13 @@ An overview of all the command-line options:
 
 Clang-tidy integrated
 ---------------------
+
+.. _Clangd: https://clang.llvm.org/extra/clangd.html
+
 Apart from being a standalone tool, :program:`clang-tidy` is integrated into
-various IDEs, code analyzers, and editors. The following table shows the most
- well-known :program:`clang-tidy` integrations in detail.
+various IDEs, code analyzers, and editors. Besides, it is currently being
+integrated into Clangd_. The following table shows the most
+well-known :program:`clang-tidy` integrations in detail.
 
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
 |                                      |        Feature                                                                                                                                           |
@@ -273,6 +277,8 @@ various IDEs, code analyzers, and editors. The following table shows the most
 |A.L.E. for Vim                        |         \+\            |               \-\               |           \-\            |                 \-\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
 |Clang Power Tools for Visual Studio   |         \-\            |               \+\               |           \-\            |                 \+\                     |           \-\            |
++--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
+|Clangd                                |         \+\            |               \-\               |           \-\            |                 \-\                     |           \-\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
 |CLion IDE                             |         \+\            |               \+\               |           \+\            |                 \+\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
@@ -302,12 +308,13 @@ various IDEs, code analyzers, and editors. The following table shows the most
 .. _integrates clang-tidy: https://www.jetbrains.com/help/clion/clang-tidy-checks-support.html
 
 CLion_ 2017.2 and later `integrates clang-tidy`_ as an extension to the
-built-in code analyzer. Inspections and applicable quick-fixes are performed
-on the fly, and checks can be configured in the standard command line
-format. In this integration, you can switch to the :program:`clang-tidy`
-binary different from the bundled one and pass configuration via ``
-.clang-tidy`` files instead of using the IDE settings. Starting from version
-2018.1, CLion allows configuring options for particular checks.
+built-in code analyzer. Starting 2018.2 EAP, it can be used via Clangd.
+Inspections and applicable quick-fixes are performed on the fly, and checks
+can be configured in the standard command line format. In this integration,
+you can switch to the :program:`clang-tidy` binary different from the bundled
+one and pass configuration via ``.clang-tidy`` files instead of using the IDE
+settings. Starting from version 2018.1, CLion allows configuring options for
+particular checks.
 
 .. _KDevelop: https://www.kdevelop.org/
 .. _kdev-clang-tidy: https://github.com/KDE/kdev-clang-tidy/
