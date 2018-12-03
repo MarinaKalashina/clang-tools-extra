@@ -20,6 +20,7 @@ interface for writing new checks.
 
 Using clang-tidy
 ================
+
 Standalone tool
 ---------------
 
@@ -260,8 +261,9 @@ An overview of all the command-line options:
 
 Clang-tidy integrated
 ---------------------
-Apart from being a standalone tool, :program:`clang-tidy` is integrated into various IDEs,
-code analyzers, and editors. The following table shows the most well-known :program:`clang-tidy` integrations
+Apart from being a standalone tool, :program:`clang-tidy` is integrated into
+various IDEs, code analyzers, and editors. The following table shows the most
+ well-known :program:`clang-tidy` integrations
 in detail.
 
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
@@ -271,27 +273,27 @@ in detail.
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
 |A.L.E. for Vim                        |         \+\            |               \-\               |           \-\            |                 \-\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|Clang Power Tools for Visual Studio   |          \-\           |                \+\              |           \-\            |                 \+\                     |            \-\           |
+|Clang Power Tools for Visual Studio   |         \-\            |               \+\               |           \-\            |                 \+\                     |           \-\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|CLion IDE                             |         \+\            |                \+\              |           \+\            |                 \+\                     |           \+\            |
+|CLion IDE                             |         \+\            |               \+\               |           \+\            |                 \+\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|CodeChecker                           |          \-\           |               \-\               |           \-\            |                 \-\                     |           \+\            |
+|CodeChecker                           |         \-\            |               \-\               |           \-\            |                 \-\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|CPPCheck                              |          \-\           |               \-\               |           \-\            |                 \-\                     |           \-\            |
+|CPPCheck                              |         \-\            |               \-\               |           \-\            |                 \-\                     |           \-\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|CPPDepend                             |          \-\           |               \-\               |           \-\            |                 \-\                     |           \-\            |
+|CPPDepend                             |         \-\            |               \-\               |           \-\            |                 \-\                     |           \-\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|Flycheck for Emacs                    |          \+\           |               \-\               |           \-\            |                 \+\                     |           \+\            |
+|Flycheck for Emacs                    |         \+\            |               \-\               |           \-\            |                 \+\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|KDevelop IDE                          |          \-\           |               \+\               |           \+\            |                 \+\                     |           \+\            |
+|KDevelop IDE                          |         \-\            |               \+\               |           \+\            |                 \+\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|Qt Creator IDE                        |          \+\           |               \+\               |           \-\            |                 \-\                     |           \+\            |
+|Qt Creator IDE                        |         \+\            |               \+\               |           \-\            |                 \-\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|ReSharper C++ for Visual Studio       |          \+\           |               \+\               |           \-\            |                 \+\                     |           \-\            |
+|ReSharper C++ for Visual Studio       |         \+\            |               \+\               |           \-\            |                 \+\                     |           \-\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|Syntastic for Vim                     |          \+\           |               \-\               |           \-\            |                 \-\                     |           \+\            |
+|Syntastic for Vim                     |         \+\            |               \-\               |           \-\            |                 \-\                     |           \+\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
-|Visual Assist for Visual Studio       |          \+\           |               \+\               |           \-\            |                 \-\                     |           \-\            |
+|Visual Assist for Visual Studio       |         \+\            |               \+\               |           \-\            |                 \-\                     |           \-\            |
 +--------------------------------------+------------------------+---------------------------------+--------------------------+-----------------------------------------+--------------------------+
 
 
@@ -300,37 +302,47 @@ in detail.
 .. _CLion: https://www.jetbrains.com/clion/
 .. _integrates clang-tidy: https://www.jetbrains.com/help/clion/clang-tidy-checks-support.html
 
-CLion_ 2017.2 and later `integrates clang-tidy`_ as an extension to the built-in code analyzer.
-Inspections and applicable quick-fixes are performed on the fly, and checks can be configured in the standard command line
-format. In this integration, you can switch to the :program:`clang-tidy` binary different from the bundled one and pass
-configuration via ``.clang-tidy`` files instead of using the IDE settings. Starting from version 2018.1, CLion allows
-configuring options for particular checks.
+CLion_ 2017.2 and later `integrates clang-tidy`_ as an extension to the
+built-in code analyzer. Inspections and applicable quick-fixes are performed
+on the fly, and checks can be configured in the standard command line
+format. In this integration, you can switch to the :program:`clang-tidy` binary
+ different from the bundled one and pass configuration via ``.clang-tidy``
+ files instead of using the IDE settings. Starting from version 2018.1, CLion
+  allows configuring options for particular checks.
 
 .. _KDevelop: https://www.kdevelop.org/
 .. _kdev-clang-tidy: https://github.com/KDE/kdev-clang-tidy/
 
-KDevelop_ with the kdev-clang-tidy_ plugin, starting from version 5.1, performs static analysis using :program:`clang-tidy`. The plugin launches the :program:`clang-tidy` binary
-from the specified location and parses its output to provide a list of issues.
+KDevelop_ with the kdev-clang-tidy_ plugin, starting from version 5.1, performs
+static analysis using :program:`clang-tidy`. The plugin launches the
+:program:`clang-tidy` binary from the specified location and parses its
+output to provide a list of issues.
 
 .. _QtCreator: https://www.qt.io/
 .. _Clang Code Model: http://doc.qt.io/qtcreator/creator-clang-codemodel.html
 
-QtCreator_ 4.6 integrates :program:`clang-tidy` warnings into the editor diagnostics under the `Clang Code Model`_.
-To employ :program:`clang-tidy` inspection in QtCreator, you need to create a copy of one of the presets and choose
-the checks to be performed in the Clang Code Model Warnings menu.
+QtCreator_ 4.6 integrates :program:`clang-tidy` warnings into the editor
+diagnostics under the `Clang Code Model`_. To employ :program:`clang-tidy`
+inspection in QtCreator, you need to create a copy of one of the presets and
+ choose the checks to be performed in the Clang Code Model Warnings menu.
 
 .. _MS Visual Studio: https://visualstudio.microsoft.com/
 .. _ReSharper C++: https://www.jetbrains.com/help/resharper/Clang_Tidy_Integration.html
 .. _Visual Assist: https://docs.wholetomato.com/default.asp?W761
 .. _Clang Power Tools: https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools
+.. _clang-tidy-vs: https://github.com/llvm-mirror/clang-tools-extra/tree/master/clang-tidy-vs
 
-`MS Visual Studio`_ can integrate :program:`clang-tidy` by means of three different tools.
-The `ReSharper C++`_ extension, version 2017.3 and later, provides seamless :program:`clang-tidy` integration:
-checks and quick-fixes run alongside native inspections.
-Apart from that, ReSharper C++ incorporates :program:`clang-tidy` as a separate step of its code clean-up process.
-`Visual Assist`_ build 2210 also includes a subset of :program:`clang-tidy` checklist to inspect the code as you edit.
-Another way to bring :program:`clang-tidy` functionality to Visual Studio is the `Clang Power Tools`_ plugin,
-which includes most of the :program:`clang-tidy` checks and runs them during compilation or as a separate step of code analysis.
+`MS Visual Studio`_ has a native clang-tidy-vs_ plugin,
+and also can integrate :program:`clang-tidy` by means of three other tools.
+The `ReSharper C++`_ extension, version 2017.3 and later, provides seamless
+:program:`clang-tidy` integration: checks and quick-fixes run alongside
+native inspections. Apart from that, ReSharper C++ incorporates
+:program:`clang-tidy` as a separate step of its code clean-up process.
+`Visual Assist`_ build 2210 includes a subset of :program:`clang-tidy` checklist
+ to inspect the code as you edit. Another way to bring :program:`clang-tidy`
+ functionality to Visual Studio is the `Clang Power Tools`_ plugin, which
+ includes most of the :program:`clang-tidy` checks and runs them during
+ compilation or as a separate step of code analysis.
 
 **Editors**
 
@@ -340,8 +352,9 @@ which includes most of the :program:`clang-tidy` checks and runs them during com
 .. _Emacs24: https://www.gnu.org/s/emacs/
 .. _Vim: https://www.vim.org/
 
-Emacs24_, when expanded with the Flycheck_ plugin, incorporates the :program:`clang-tidy` inspection into the syntax analyzer.
-For Vim_, you can use Syntastic_, which includes :program:`clang-tidy`, or `A.L.E.`_,
+Emacs24_, when expanded with the Flycheck_ plugin, incorporates the
+:program:`clang-tidy` inspection into the syntax analyzer. For Vim_, you can
+use Syntastic_, which includes :program:`clang-tidy`, or `A.L.E.`_,
 a lint engine that applies :program:`clang-tidy` along with other linters.
 
 **Analyzers**
@@ -351,10 +364,12 @@ a lint engine that applies :program:`clang-tidy` along with other linters.
 .. _CodeChecker: https://github.com/Ericsson/codechecker
 .. _plugin: https://github.com/Ericsson/CodeCheckerEclipsePlugin
 
-:program:`clang-tidy` is integrated in CPPDepend_ starting from version 2018.1 and CPPCheck_ 1.82. CPPCheck integration lets
-you import Visual Studio solutions and run the :program:`clang-tidy` inspection on them.
-The CodeChecker_ application of version 5.3 or later, which also comes as a plugin_ for Eclipse,
-supports :program:`clang-tidy` as a static analysis instrument and allows to use a custom :program:`clang-tidy` binary.
+:program:`clang-tidy` is integrated in CPPDepend_ starting from version 2018.1
+and CPPCheck_ 1.82. CPPCheck integration lets you import Visual Studio
+solutions and run the :program:`clang-tidy` inspection on them. The
+CodeChecker_ application of version 5.3 or later, which also comes as a plugin_
+for Eclipse,supports :program:`clang-tidy` as a static analysis instrument and
+allows to use a custom :program:`clang-tidy` binary.
 
 Suppressing Undesired Diagnostics
 =================================
@@ -382,7 +397,7 @@ if changing the semantics of the code is not desired, the ``NOLINT`` or
 
     // Silent only the specified diagnostics for the next line
     // NOLINTNEXTLINE(google-explicit-constructor, google-runtime-int)
-    Foo(bool param); 
+    Foo(bool param);
   };
 
 The formal syntax of ``NOLINT``/``NOLINTNEXTLINE`` is the following:
@@ -442,7 +457,7 @@ There are a few tools particularly useful when developing clang-tidy checks:
     provides a convenient way to dump AST of a C++ program.
 
 If CMake is configured with ``CLANG_ENABLE_STATIC_ANALYZER``,
-:program:`clang-tidy` will not be built with support for the 
+:program:`clang-tidy` will not be built with support for the
 ``clang-analyzer-*`` checks or the ``mpi-*`` checks.
 
 
