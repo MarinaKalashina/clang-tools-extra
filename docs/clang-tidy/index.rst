@@ -10,8 +10,8 @@ See also:
    :maxdepth: 1
 
    The list of clang-tidy checks <checks/list>
-   Clang-tidy IDE/Editor Integrations <integrations>
-   Getting Involved <contribution>
+   Clang-tidy IDE/Editor Integrations <Integrations>
+   Getting Involved <Contributing>
 
 :program:`clang-tidy` is a clang-based C++ "linter" tool. Its purpose is to
 provide an extensible framework for diagnosing and fixing typical programming
